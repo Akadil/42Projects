@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:27:28 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/10 12:38:38 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/10 18:51:48 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	ft_check_the_sign(const char *str, int *pos)
 
 	if (!str[*pos])
 		sign = 1;
-	else if (str[*pos]  == '-')
+	else if (str[*pos] == '-')
 	{
 		*pos = *pos + 1;
 		sign = -1;
