@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:33:12 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/03 12:33:13 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/10 19:32:08 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		returner[i] = (*f)(i, s[i]);
 		i++;
 	}
+	returner[i] = '\0';
 	return (returner);
 }
