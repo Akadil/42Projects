@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:29:08 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/03 12:29:09 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/11 14:32:54 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	if (lst && del)
 	{
 		temp = *lst;
-		while (!temp)
+		while (temp)
 		{
 			temp = (*lst)->next;
 			ft_lstdelone(*lst, del);
