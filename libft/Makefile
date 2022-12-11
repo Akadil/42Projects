@@ -6,7 +6,7 @@
 #    By: akalimol <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/03 12:54:42 by akalimol          #+#    #+#              #
-#    Updated: 2022/12/03 15:50:17 by akalimol         ###   ########.fr        #
+#    Updated: 2022/12/11 15:08:50 by akalimol         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC		= ft_atoi.c ft_isascii.c ft_memmove.c ft_striteri.c ft_strmapi.c \
 		  ft_strlcat.c ft_strnstr.c ft_tolower.c ft_calloc.c ft_isprint.c \
 		  ft_memchr.c ft_putchar_fd.c ft_strchr.c ft_strlcpy.c ft_memcpy.c \
 		  ft_strrchr.c ft_toupper.c ft_isalnum.c ft_itoa.c ft_isalpha.c \
-		  ft_memcmp.c ft_putdigit_fd.c ft_strdup.c ft_strlen.c ft_strstr.c
+		  ft_memcmp.c ft_putdigit_fd.c ft_strdup.c ft_strlen.c
 
 HEADER		= libft.h
 
