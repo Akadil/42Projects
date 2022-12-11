@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:29:36 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/03 12:29:37 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/11 14:27:05 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*buffer;
 
-	buffer = lst;
-	if (!buffer)
+	if (!lst)
 		return (NULL);
-	while (!(buffer->next))
+	buffer = lst;
+	while (buffer->next)
 		buffer = buffer->next;
 	return (buffer);
 }
