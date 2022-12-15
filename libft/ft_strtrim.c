@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:34:00 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/10 13:50:08 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/12 12:55:08 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		beg;
 	int		end;
 
+	if (!s1)
+		return (NULL);
 	beg = ft_beg(s1, set);
 	end = ft_end(s1, set, beg);
 	returner = (char *) malloc(end - beg + 1 + 1);

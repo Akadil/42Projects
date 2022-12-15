@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:31:07 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/03 12:31:08 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/12 14:12:26 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	i = 0;
 	while (i < len)
-	((unsigned char *)b)[i++] = c;
+		((unsigned char *)b)[i++] = c;
 	return (b);
 }

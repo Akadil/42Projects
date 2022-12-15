@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:31:00 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/04 14:58:23 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/11 18:55:26 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = len;
 	my_dst = (char *)dst;
 	my_src = (char *)src;
-	if (my_dst > my_src)
+	if (my_dst == my_src)
+		return (my_dst);
+	else if (my_dst > my_src)
 	{
 		while (i-- > 0)
 			my_dst[i] = my_src[i];

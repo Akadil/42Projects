@@ -1,35 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_putdigit_fd.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/03 12:33:12 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/12 12:55:33 by akalimol         ###   ########.fr       */
+/*   Created: 2022/12/03 12:31:23 by akalimol          #+#    #+#             */
+/*   Updated: 2022/12/03 12:31:24 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+static void	ft_putdigit_fd(int n, int fd)
 {
-	char	*returner;
-	int		len;
-	int		i;
+	char	c;
 
-	if (!s)
-		return (NULL);
-	len = (int) ft_strlen(s);
-	returner = (char *) malloc(sizeof(char) * (len + 1));
-	if (!returner)
-		return (NULL);
-	i = 0;
-	while (i < len)
+	c = n + 48;
+	write(fd, &c, 1);
+}
+
+void	ft_putnbr_fd(int nb, int fd)
+{
+	if (nb < 0 && nb != -2147483648)
 	{
-		returner[i] = (*f)(i, s[i]);
-		i++;
+		write(fd, "-", 1);
+		nb *= -1;
 	}
-	returner[i] = '\0';
-	return (returner);
+	if (nb == -2147483648)
+		write (fd, "-2147483648", 11);
+	else if (nb > 9)
+	{
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putnbr_fd(nb % 10, fd);
+	}
+	else
+		ft_putdigit_fd(nb, fd);
 }

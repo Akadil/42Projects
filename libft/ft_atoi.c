@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:27:28 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/10 18:51:48 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/12 13:27:15 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,6 @@ int	ft_atoi(const char *str)
 	int		i;
 	int		sign;
 
-	if (!str)
-		return (0);
 	i = ft_skip_isspace(str);
 	sign = ft_check_the_sign(str, &i);
 	returner = 0;

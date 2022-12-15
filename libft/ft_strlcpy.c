@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 12:32:55 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/04 16:23:02 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/11 18:34:08 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
-	if (!src)
-		return (0);
 	src_len = ft_strlen(src);
 	while (i + 1 < dstsize && i < src_len)
 	{
