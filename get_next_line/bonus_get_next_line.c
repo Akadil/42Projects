@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/25 15:44:49 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/26 15:17:40 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/26 15:35:54 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,9 @@ char	*get_next_line(int fd)
 	static char	*containers[1024]; // To contain all my buffers
 	char		*returner; // a string to return as a line
 
+	// In addition with below cases, other coders also used:
+	// if (read(fd, stack[fd], 0) < 0) to check for file existence
+	// It is good practice, but the school rules prohibites us to do that
 	if (fd < 0 || fd > 1024 || BUFFER_SIZE < 1)
 		return ('\0');
 	
