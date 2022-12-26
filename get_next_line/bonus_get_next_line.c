@@ -6,12 +6,27 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/25 15:44:49 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/26 14:06:33 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/26 15:14:07 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bonus_get_next_line.h"
 
+/*
+ *	GET_NEXT_LINE
+ *	-------------
+ *	DESCRIPTION
+ *		This function takes an opened file descriptor and returns its next line.
+ *		This function has undefined behavior when reading from a binary file.
+ *	
+ *	PARAMETERS
+ *		# fd - A file descriptor 
+ *	
+ *	RETURN VALUES
+ *		If successful, get_next_line returns a string with the full line ending in
+ *		a line break (`\n`) when there is one. 
+ *		If an error occurs, or there's nothing more to read, it returns NULL.
+ * */
 char	*get_next_line(int fd)
 {
 	static char	*containers[1024]; // To contain all my buffers
@@ -124,6 +139,15 @@ int	ft_super_malloc(char **_buffer, int *size, int *len)
 	return (1);
 }
 
+/*
+ *	Retrieves a new line from the buffer and removes it from the buffer
+ *
+ *	Input:
+ *		buffer - address of the buffer
+ *
+ *	Output:
+ *		The new mallocced line
+ * */
 char	*ft_create_line(char **_buffer)
 {
 	char	*line;
@@ -150,9 +174,21 @@ char	*ft_create_line(char **_buffer)
 	return (line);
 }
 
+
+/*
+ *	Removes an old line from the buffer and leaves only "untouched" bytes
+ *
+ * 	input:
+ * 		buffer - address of the saved buffer
+ * 		len - length or position of the end of previous line
+ *
+ * 	Output:
+ * 		1 if succesfully removed
+ * 		0 if failed 
+ * */
 int	ft_clean_up(char **_buffer, int len)
 {
-	char	*rest;
+	char	*rest; // The pointer to new string 
 	int		i;
 
 	rest = (char *)malloc(ft_strlen(*_buffer) - len + 1);
