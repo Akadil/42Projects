@@ -21,6 +21,10 @@
 # include <unistd.h>
 
 char	*get_next_line(int fd);
+char    *ft_create_line(char **_buffer);
+int     ft_clean_up(char **_buffer, int len);
+int     ft_read_line(char **con, int fd);
+int     ft_super_malloc(char **_buffer, int *size, int *len);
 int		ft_check(char *s);
 int		ft_free_return(char *trash);
 int		ft_strlen(char *s);

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_bonus.h"
+#include "bonus_get_next_line.h"
 
 int	ft_check(char *s)
 {
