@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/25 15:44:49 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/26 15:14:07 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/26 15:17:40 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,8 +169,11 @@ char	*ft_create_line(char **_buffer)
 		i++;
 	}
 	line[i] = '\0';
-	if ((ft_clean_up(_buffer, len) == 0 || i == 0) && ft_free_return(line) == 0)
+	if (ft_clean_up(_buffer, len) == 0 || i == 0)
+	{
+		free (line);
 		return ('\0');
+	}
 	return (line);
 }
 

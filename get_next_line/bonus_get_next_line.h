@@ -6,7 +6,7 @@
 /*   By: akalimol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/20 11:26:13 by akalimol          #+#    #+#             */
-/*   Updated: 2022/12/26 15:07:53 by akalimol         ###   ########.fr       */
+/*   Updated: 2022/12/26 15:18:04 by akalimol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int		ft_clean_up(char **_buffer, int len);
 int		ft_read_line(char **con, int fd);
 int		ft_super_malloc(char **_buffer, int *size, int *len);
 int		ft_check(char *s);
-int		ft_free_return(char *trash);
 int		ft_strlen(char *s);
 
 #endif
