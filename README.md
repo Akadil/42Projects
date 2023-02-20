@@ -11,4 +11,4 @@
 | 0 | [LibFT](https://github.com/Akadil/42Projects/blob/main/libft/en.subject.pdf) | Write your `own library`: a collection of functions that will be a useful tool for your cursus. | [Link](https://github.com/Akadil/42Projects/tree/main/libft) | 125 |
 | 0 | Piscine | `2022 August piscine` | [Link](https://github.com/Akadil/42Piscine) | 9.76 |
 |  |  |  |  |  |
-> Born2beroot solution link was virused! don't go in it
+> Born2beroot solution link was virused ! Don't click on it
