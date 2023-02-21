@@ -12,3 +12,6 @@
 | 0 | Piscine | 2022 August piscine `Make friends, help others, study 24/7` | [Link](https://github.com/Akadil/42Piscine) | 9.76 |
 |  |  |  |  |  |
 > Born2beroot solution link was virused ! Don't click on it
+
+
+> (!) Think of removing the score, because that's unneded information. Also maybe to add "Learning outcomes"?
