@@ -9,7 +9,7 @@
 | 1 | [Get next line](https://github.com/Akadil/42Projects/blob/main/get_next_line/en.subject.pdf) | Write a function that returns a `line read` from a file descriptor | [Link](https://github.com/Akadil/42Projects/tree/main/get_next_line) | Rigor, Unix, Algorithms&AI |
 | 1 | [ft_printf](https://github.com/Akadil/42Projects/blob/main/printf/en.subject.pdf) | Write a library that contains ft_printf(), a function that will `mimic the original printf()` | [Link](https://github.com/Akadil/42Projects/tree/main/printf) | Rigor, Algorithms&AI |
 | 0 | [LibFT](https://github.com/Akadil/42Projects/blob/main/libft/en.subject.pdf) | Write your `own library`: a collection of functions that will be a useful tool for your cursus. | [Link](https://github.com/Akadil/42Projects/tree/main/libft) | Rigor, Imperative programing, Algorithms&AI |
-| 0 | Piscine | 2022 August piscine `Make friends, help others, study 24/7` | [Link](https://github.com/Akadil/42Piscine) | 9.76 |
+| 0 | Piscine | 2022 August piscine `Make friends, help others, study 24/7` | [Link](https://github.com/Akadil/42Piscine) | Communication skills |
 |  |  |  |  |  |
 > Born2beroot solution link was virused ! Don't click on it
 
