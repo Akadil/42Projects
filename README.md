@@ -2,6 +2,8 @@
 
 | Level | Name | Description | Solution | Skills | 
 | :---: | :--- | ----------- | :------: | ----: | 
+| 3 | [Minishell](https://github.com/Akadil/42project_minishell) | creating `a simple shell`, our own bash | [Subject](https://github.com/Akadil/42project_minishell/blob/main/en.subject.pdf) | Rigor, Imperative programing, UNIX |
+| 3 | [Philosophers](https://github.com/Akadil/42project_philosophers) | This project is about learning `how threads work` by precisely timing a group  | [Subject](https://github.com/Akadil/42project_philosophers/blob/main/en.subject%20(1).pdf) | Rigor, Imperative programing, UNIX |
 | 2 | [Fil de Fer](https://github.com/Akadil/42project_fdf) | Create a simple `wireframe model` of a landscape | [Subject](https://github.com/Akadil/42project_fdf/blob/main/en.subject.pdf) | Rigor, Imperative programing, Graphics, Algorithms&AI |
 | 2 | [Pipex](https://github.com/Akadil/42project_pipex) | Recreate the `pipe command` from terminal | [Subject](https://github.com/Akadil/42project_pipex/blob/main/en.subject%20(1).pdf)  | Imperative programing, Unix
 | 2 | [Push swap](https://github.com/Akadil/42project_push_swap) | `Sort the stack` with the given commands | [Subject](https://github.com/Akadil/42project_push_swap/blob/main/en.subject.pdf) | Rigor, Imperative programing, Unix, Algorithms&AI |
